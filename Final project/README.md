@@ -1,14 +1,12 @@
-# 作业提交流程
+# 大作业之葫芦娃大战
 
-1. 注册github账号（假设账户名称为javalover。若已注册则跳过此步骤）；
-2. 用此账号登陆github（若已登陆则跳过此步骤）；
-3. fork本仓库（ https://github.com/njuics/java-2017f-homework ）至自己账户，仓库url为（ https://github.com/javalover/java-2017f-homework );
-4. 在你的本机clone你所fork的仓库(javalover/java-2017f-homework）；
-	1. 对于简单作业（在我们讲使用maven/gradle等构建工具开发java工程之前），请使用以下步骤
-		1. 在javalover/java-2017f-homework进入当前作业目录，例如java-2017f-homework／20170912目录，新建子目录`张三-141220001`,此处“张三”和“141220001” 分别替换真实姓名和学号;
-		2. 将你写好的代码文件拷贝到该目录下，然后执行`git add .`, `git commit -a` 和`git push`
-	2. 对于复杂作业和最后的大作业（在我们讲使用maven/gradle等构建工具开发java工程之后），请使用以下步骤
-		1. 在javalover账户下新建一个代码仓库，例如myhomework；
-		2. 在myhomework下编写代码，代码使用`git add .`, `git commit -a` 和`git push`等命令进行管理；
-		3. 在javalover/java-2017f-homework进入当前作业目录，例如java-2017f-homework／20170912目录，执行`git submodule add https://github.com/javalover/myhomework 张三-141220001`,此处“张三”和“141220001” 分别替换真实姓名和学号。  
-5. 在javalover/java-2017f-homework上创建“pull request"
+老师实在抱歉，由于编程基础差，能力时间有限，作业未能完成，但是还是说明一下整个作业的心路历程
+1.首先定义一个大类Character，即人物角色，继承了weapon，actionmethod等接口，于是具有移动和攻击能力，其中衍生出两个大类，
+   正义与邪恶两方，葫芦娃与爷爷属于正义方，其余在邪恶方。
+2.引入接口arraymethod排布阵法，其中可加入多种阵法。
+3.定义warqueue作为一个阵营，其中融入个体，形成一方阵营。
+4.每个角色具有攻击力和生命值，相遇时进行攻击，生命值为0时死亡，留下尸体。
+5.角色具有判断方法，判断前方是否通行，遇到敌人则攻击，遇到尸体或友方则想法绕道而行，这个方法写了很久bug太多，未成功。
+6.每个角色为一个线程，但一方全部死亡时战斗结束。
+虽然作业没有完成，但此次的java课程让我对java有了初步了解，收获颇多，有时间的话会继续学习java知识，谢谢老师！
+
